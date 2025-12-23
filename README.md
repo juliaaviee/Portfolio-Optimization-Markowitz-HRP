@@ -4,14 +4,14 @@ This project implements two advanced portfolio optimization techniques to manage
 1.  **Markowitz Modern Portfolio Theory (MPT)**: Uses Mean-Variance Optimization to find the Efficient Frontier.
 2.  **Hierarchical Risk Parity (HRP)**: A modern machine learning approach (clustering) to allocate risk, avoiding some of the instability issues of MPT.
 
-## 📂 Project Structure
+## Project Structure
 
 - `main.py`: The entry point. Downloads data, runs simulations, and plots results.
 - `portfolio_lib.py`: The core library containing algorithms for MPT and HRP.
 - `requirements.txt`: List of Python dependencies.
 - `efficient_frontier_hrp.png`: Output plot showing the Efficient Frontier and optimal portfolios.
 
-## 🚀 Installation
+## Installation
 
 1.  **Prerequisites**: Python 3.8+
 2.  **Install Dependencies**:
@@ -19,7 +19,7 @@ This project implements two advanced portfolio optimization techniques to manage
     pip install -r requirements.txt
     ```
 
-## 🏃 Usage
+## Usage
 
 Run the main script:
 ```bash
@@ -34,7 +34,7 @@ This will:
 5.  Print the allocations to the console.
 6.  Save a plot as `efficient_frontier_hrp.png`.
 
-## 🧠 Methodology Explained
+## Methodology Explained
 
 ### 1. Markowitz Optimization (MPT)
 MPT assumes investors want to maximize return for a given level of risk.
@@ -55,15 +55,9 @@ HRP is a technique introduced by Marcos Lopez de Prado to address the pitfalls o
     -   We split the portfolio into clusters and allocate weights based on the inverse variance of each cluster.
     -   This flows down the tree, ensuring that risk is diversified across "branches" (clusters) rather than just individual assets.
 
-## 📊 Results Interpretation
+## Results Interpretation
 
 -   **Max Sharpe (Red Star)**: Ideal for growth-focused investors who accept risk for higher returns.
 -   **Min Volatility (Blue Star)**: Ideal for conservative investors.
 -   **HRP (Green Star)**: A robust alternative that often sits between the two. It tends to be more stable out-of-sample because it doesn't rely on the precise inversion of the covariance matrix, which can be noisy.
 
-## 🛠 Customization
-
-To use your own stocks, edit the `tickers` list in `main.py`:
-```python
-tickers = ['YOUR', 'OWN', 'TICKERS', ...]
-```
