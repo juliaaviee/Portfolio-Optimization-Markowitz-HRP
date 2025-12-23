@@ -14,10 +14,6 @@ This project implements two advanced portfolio optimization techniques to manage
 ## Installation
 
 1.  **Prerequisites**: Python 3.8+
-2.  **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
