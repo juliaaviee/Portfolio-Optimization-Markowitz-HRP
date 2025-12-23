@@ -25,7 +25,27 @@ Run the main script, this will:
 5.  Print the allocations to the console.
 6.  Save a plot as `efficient_frontier_hrp.png`.
 
-## Methodology Explained
+## 📉 Example Output
+
+```text
+------------------------------
+Max Sharpe Ratio Portfolio:
+Return: 0.37, Volatility: 0.36
+Allocations: PG (27%), JNJ (22%), V (15%), AMZN (14%)...
+
+Min Volatility Portfolio:
+Return: 0.14, Volatility: 0.22
+Allocations: AMZN (38%), V (22%), NVDA (17%)...
+
+HRP Portfolio:
+Return: 0.16, Volatility: 0.23
+Allocations: JNJ (29%), PG (24%), MSFT (9%)...
+```
+
+![Efficient Frontier Plot](efficient_frontier_hrp.png)
+
+
+## 🧠 Methodology Explained
 
 ### 1. Markowitz Optimization (MPT)
 MPT assumes investors want to maximize return for a given level of risk.
