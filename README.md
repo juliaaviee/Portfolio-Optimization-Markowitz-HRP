@@ -17,12 +17,7 @@ This project implements two advanced portfolio optimization techniques to manage
 
 ## Usage
 
-Run the main script:
-```bash
-python main.py
-```
-
-This will:
+Run the main script, this will:
 1.  Download historical data for 10 default tickers (AAPL, MSFT, GOOGL, AMZN, TSLA, JPM, JNJ, V, PG, NVDA).
 2.  Run a Monte Carlo simulation (20,000 portfolios) to map the Efficient Frontier.
 3.  Calculate the **Max Sharpe Ratio** and **Min Volatility** portfolios.
