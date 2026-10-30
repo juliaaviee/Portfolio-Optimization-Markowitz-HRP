@@ -25,7 +25,7 @@ Run the main script, this will:
 5.  Print the allocations to the console.
 6.  Save a plot as `efficient_frontier_hrp.png`.
 
-## 📉 Example Output
+## Example Output
 
 ```text
 ------------------------------
@@ -45,7 +45,7 @@ Allocations: JNJ (29%), PG (24%), MSFT (9%)...
 ![Efficient Frontier Plot](efficient_frontier_hrp.png)
 
 
-## 🧠 Methodology Explained
+## Methodology Explained
 
 ### 1. Markowitz Optimization (MPT)
 MPT assumes investors want to maximize return for a given level of risk.
